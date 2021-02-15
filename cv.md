@@ -1,8 +1,8 @@
 1. Serhii Tokariev
 2. Contacts:
-   1. Email: sergey.v.tokareff@gmail.com
-   1. Telegram: @sergeytokareff
-   1. Skype: liamparishowlett
+   1. **Email:** sergey.v.tokareff@gmail.com
+   1. **Telegram:** @sergeytokareff
+   1. **Skype:** liamparishowlett
 3. I have no work experience. I have the ability to learn quickly and learn new things.
 4. My skills: **JavaScript, HTML, CSS, SCSS, Git, Gulp, Webpack.**
 5. My example code:
