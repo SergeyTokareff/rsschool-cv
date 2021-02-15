@@ -1,1 +1,1 @@
-https://sergeytokareff.github.io/rsschool-cv/cv.md
+https://sergeytokareff.github.io/rsschool-cv/cv
