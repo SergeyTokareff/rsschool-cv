@@ -1,0 +1,54 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+section {
+    width: 100%;
+}
+
+h1, h3 {
+    background-color: #A9A9A9;
+}
+
+.about__title {
+    font-size: 36px;
+}
+
+.about__desc {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.about__photo-wrapper {
+    width: 200px;
+    margin-top: 30px;
+}
+
+.about__photo {
+    width: 100%;
+}
+
+.about__item {
+    font-weight: 600;
+}
+
+.skills__item {
+    font-weight: 700;
+}
