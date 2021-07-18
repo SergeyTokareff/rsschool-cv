@@ -1,0 +1,109 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+.content {
+	flex: 1 0 auto;
+}
+
+section {
+    width: 100%;
+}
+
+h1, h3 {
+    background-color: #A9A9A9;
+}
+
+.about__title {
+    font-size: 36px;
+}
+
+.about__desc {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.about__photo-wrapper {
+    width: 200px;
+    margin-top: 30px;
+}
+
+.about__photo {
+    width: 100%;
+}
+
+.about__item {
+    font-weight: 600;
+}
+
+.skills__item {
+    font-weight: 700;
+}
+
+.sample-code__text {
+    color: #000000;
+    font-weight: 700;
+}
+
+.footer {
+    background: #a9a9a9;
+    display: flex;
+    align-items: center;
+    flex: 0 0 auto;
+    padding: 20px 0;
+    display: flex;
+}
+
+.footer__github-profile {
+    color: #000000;
+    font-size: 20px;
+}
+
+.footer__copyright {
+    font-size: 20px;
+    margin: 0 20px;
+}
+
+.footer__logo-wrapper {
+    width: 100px;
+}
+
+.footer__logo {
+    width: 100%;
+}
+
+@media (max-width: 480px) {
+    .footer {
+        flex-direction: column;
+    }
+
+    .footer__copyright {
+        margin: 10px 0;
+    }
+    
+}
