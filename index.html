@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>My CV</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- ABOUT -->
+      <header class="about">
+        <h1 class="about__title">Serhii Tokariev</h1>
+        <h2 class="about__desc">Junior Frontend Developer</h2>
+        <div class="about__photo-wrapper">
+          <img src="./img/my-photo.jpg" alt="Avatar" class="about__photo" />
+        </div>
+        <div class="about__contacts">
+          <ul class="about__list">
+            <li class="about__item">Phone: +380967332116</li>
+            <li class="about__item">Email: sergey.v.tokareff@gmail.com</li>
+            <li class="about__item">Telegram: @sergeytokareff</li>
+            <li class="about__item">Skype: liamparishowlett</li>
+          </ul>
+        </div>
+        <p class="about__me">
+          I have no work experience. I have the ability to learn quickly and
+          learn new things.
+        </p>
+      </header>
+      
+      <main class="content">
+        <!-- SKILLS -->
+        <section class="skills">
+          <h2 class="skills__title">Professional Skills</h2>
+          <ul class="skills__list">
+            <li class="skills__item">HTML</li>
+            <li class="skills__item">CSS</li>
+            <li class="skills__item">SCSS</li>
+            <li class="skills__item">Javascript</li>
+            <li class="skills__item">Jquery</li>
+            <li class="skills__item">Gulp</li>
+            <li class="skills__item">Webpack</li>
+            <li class="skills__item">Git</li>
+          </ul>
+        </section>
+
+        <!-- CODE -->
+        <section class="sample-code">
+          <h3 class="sample-code__title">Sample code</h3>
+          <code>
+            <pre>           
+              const openMenu = function () {
+                const burger = document.querySelector('.hamburger');
+                const fullScreenMenu = document.querySelector('.fullscreen-menu');
+                const body = document.querySelector('body');
+                const links = $('.fullscreen-menu__link');
+          
+                burger.addEventListener('click', function(e) {
+                e.preventDefault();
+                burger.classList.toggle('hamburger--active');
+                body.classList.toggle('body-active-menu');
+                fullScreenMenu.classList.toggle('fullscreen-menu--active');
+                });
+          
+                $(links).each((link) => {
+                links.click(e => {
+                    $('.fullscreen-menu').removeClass('fullscreen-menu--active');
+                    $(body).removeClass('body-active-menu');
+                    $(burger).removeClass('hamburger--active');
+                });
+                });
+              }();
+        </pre>
+          </code>
+        </section>
+
+        <!-- PROJECTS -->
+        <section class="projects">
+          <h3 class="projects__title">My projects</h3>
+          <p class="projects__text">I have one training project:  
+            <a class="projects__project" href="https://sergeytokareff.github.io/chocco/" target="_blank">Chocco</a>
+          </p>
+          <p>
+            <a class="projects__link" href="https://github.com/SergeyTokareff/chocco" target="_blank">Link to source code</a>
+          </p>
+        </section>
+
+        <!-- EDUCATION -->
+        <section class="education">
+          <h3 class="education__title">My education</h3>
+          <p class="education__text">
+            I finished a course from Loftschool 'Web development for beginners'.
+          </p>
+        </section>
+
+        <!-- LANGUAGES -->
+        <section class="languages">
+          <h3 class="languages__title">Languages</h3>
+          <p class="languages__text">I have a level of English Beginners.</p>
+        </section>
+      </main>
+
+      <!-- FOOTER -->
+      <footer class="footer">
+        <a href="https://github.com/SergeyTokareff" class="footer__github-profile">My Github</a>
+        <span class="footer__copyright">&copy; 2021</span>
+        <div class="footer__logo-wrapper">
+          <a href="https://rs.school/js/" target="_blank">
+            <img
+              class="footer__logo"
+              src="./img/rs_school_js.svg"
+              alt="Logo RS School"
+            />
+          </a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
