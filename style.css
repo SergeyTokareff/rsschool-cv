@@ -35,7 +35,7 @@ section {
     width: 100%;
 }
 
-h1, h3 {
+h1, h2, h3 {
     background-color: #A9A9A9;
 }
 
@@ -68,6 +68,15 @@ h1, h3 {
 .sample-code__text {
     color: #000000;
     font-weight: 700;
+}
+
+.projects__project, .projects__link {
+  font-size: 28px;
+  color: grey;
+}
+
+.projects__link {
+  font-size: 22px;
 }
 
 .footer {
