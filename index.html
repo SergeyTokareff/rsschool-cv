@@ -9,31 +9,31 @@
   </head>
   <body>
     <div class="container">
+      <!-- ABOUT -->
+      <header class="about">
+        <h1 class="about__title">Serhii Tokariev</h1>
+        <h2 class="about__desc">Junior Frontend Developer</h2>
+        <div class="about__photo-wrapper">
+          <img src="./img/my-photo.jpg" alt="Avatar" class="about__photo" />
+        </div>
+        <div class="about__contacts">
+          <ul class="about__list">
+            <li class="about__item">Phone: +380967332116</li>
+            <li class="about__item">Email: sergey.v.tokareff@gmail.com</li>
+            <li class="about__item">Telegram: @sergeytokareff</li>
+            <li class="about__item">Skype: liamparishowlett</li>
+          </ul>
+        </div>
+        <p class="about__me">
+          I have no work experience. I have the ability to learn quickly and
+          learn new things.
+        </p>
+      </header>
+      
       <main class="content">
-        <!-- ABOUT -->
-        <section class="about">
-          <h1 class="about__title">Serhii Tokariev</h1>
-          <span class="about__desc">Junior Frontend Developer</span>
-          <div class="about__photo-wrapper">
-            <img src="./img/my-photo.jpg" alt="Avatar" class="about__photo" />
-          </div>
-          <div class="about__contacts">
-            <ul class="about__list">
-              <li class="about__item">Phone: +380967332116</li>
-              <li class="about__item">Email: sergey.v.tokareff@gmail.com</li>
-              <li class="about__item">Telegram: @sergeytokareff</li>
-              <li class="about__item">Skype: liamparishowlett</li>
-            </ul>
-          </div>
-          <p class="about__me">
-            I have no work experience. I have the ability to learn quickly and
-            learn new things.
-          </p>
-        </section>
-
         <!-- SKILLS -->
         <section class="skills">
-          <h3 class="skills__title">Professional Skills</h3>
+          <h2 class="skills__title">Professional Skills</h2>
           <ul class="skills__list">
             <li class="skills__item">HTML</li>
             <li class="skills__item">CSS</li>
@@ -49,13 +49,42 @@
         <!-- CODE -->
         <section class="sample-code">
           <h3 class="sample-code__title">Sample code</h3>
-          <a class=sample-code__text target="_blank" href="https://github.com/SergeyTokareff/typical-arrays-problems/blob/master/src/index.js">Github</a>
+          <code>
+            <pre>           
+              const openMenu = function () {
+                const burger = document.querySelector('.hamburger');
+                const fullScreenMenu = document.querySelector('.fullscreen-menu');
+                const body = document.querySelector('body');
+                const links = $('.fullscreen-menu__link');
+          
+                burger.addEventListener('click', function(e) {
+                e.preventDefault();
+                burger.classList.toggle('hamburger--active');
+                body.classList.toggle('body-active-menu');
+                fullScreenMenu.classList.toggle('fullscreen-menu--active');
+                });
+          
+                $(links).each((link) => {
+                links.click(e => {
+                    $('.fullscreen-menu').removeClass('fullscreen-menu--active');
+                    $(body).removeClass('body-active-menu');
+                    $(burger).removeClass('hamburger--active');
+                });
+                });
+              }();
+        </pre>
+          </code>
         </section>
 
         <!-- PROJECTS -->
         <section class="projects">
           <h3 class="projects__title">My projects</h3>
-          <p class="projects__text">I have not projects.</p>
+          <p class="projects__text">I have one training project:  
+            <a class="projects__project" href="https://sergeytokareff.github.io/chocco/" target="_blank">Chocco</a>
+          </p>
+          <p>
+            <a class="projects__link" href="https://github.com/SergeyTokareff/chocco" target="_blank">Link to source code</a>
+          </p>
         </section>
 
         <!-- EDUCATION -->
